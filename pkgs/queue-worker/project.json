@@ -1,0 +1,20 @@
+{
+  "name": "queue-worker",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pkgs/queue-worker/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "pkgs/queue-worker/dist"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {}
+    }
+  },
+  "tags": ["type:library"]
+}
